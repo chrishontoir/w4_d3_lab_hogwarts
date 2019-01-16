@@ -2,6 +2,6 @@
 
 <ul>
   <% for student in @students %>
-    <li>Name: <%=student.first_name%> <%=student.last_name%><br>House: <%=student.house%><br>Age: <%=student.age%></li>
+    <li>Name: <a href="/students/<%= student.id %>"><%=student.first_name%> <%=student.last_name%></a><br>House: <%=student.house%><br>Age: <%=student.age%></li>
   <% end %>
 </ul>
