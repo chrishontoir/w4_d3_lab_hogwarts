@@ -1,0 +1,7 @@
+<h1>All Students</h1>
+
+<ul>
+  <% for student in @students %>
+    <li>Name: <%=student.first_name%> <%=student.last_name%><br>House: <%=student.house%><br>Age: <%=student.age%></li>
+  <% end %>
+</ul>
